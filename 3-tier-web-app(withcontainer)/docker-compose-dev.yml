@@ -2,12 +2,12 @@ services:
   client-react-vite:
     image: client-react-vite
     build:
-      context: ../05-example-web-application/client-react/
+      context: ../3-tier-web-app(withoutcontainer)/client-react/
       dockerfile: ../../06-building-container-images/client-react/Dockerfile.3
     init: true
     volumes:
       - type: bind
-        source: ../05-example-web-application/client-react/
+        source: ../3-tier-web-app(withoutcontainer)/client-react/
         target: /usr/src/app/
       - type: volume
         target: /usr/src/app/node_modules
@@ -25,7 +25,7 @@ services:
       shipyard.route: "/"
     image: client-react-nginx
     build:
-      context: ../05-example-web-application/client-react/
+      context: ../3-tier-web-app(withoutcontainer)/client-react/
       dockerfile: ../../06-building-container-images/client-react/Dockerfile.5
     init: true
     networks:
@@ -39,12 +39,12 @@ services:
       shipyard.route.rewrite: true
     image: api-node
     build:
-      context: ../05-example-web-application/api-node/
+      context: ../3-tier-web-app(withoutcontainer)/api-node/
       dockerfile: ../../06-building-container-images/api-node/Dockerfile.7
     init: true
     # volumes:
     #   - type: bind
-    #     source: ../05-example-web-application/api-node/
+    #     source: ../3-tier-web-app(withoutcontainer)/api-node/
     #     target: /usr/src/app/
     #   - type: volume
     #     target: /usr/src/app/node_modules
@@ -64,7 +64,7 @@ services:
       shipyard.route.rewrite: true
     image: api-golang
     build:
-      context: ../05-example-web-application/api-golang/
+      context: ../3-tier-web-app(withoutcontainer)/api-golang/
       dockerfile: ../../06-building-container-images/api-golang/Dockerfile.6
     init: true
     depends_on:
