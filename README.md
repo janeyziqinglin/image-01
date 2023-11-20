@@ -1,0 +1,55 @@
+# 3-Tier Web Application comparing bare metal and containers
+
+## Overview
+
+This project showcases a 3-tier web application built with a React front-end client, two APIs (Node.js and Golang), and a database. The aim of this project is to create a simple yet realistic microservices system that can be containerized, providing insights into the advantages and trade-offs of using containerization over traditional bare-metal deployment.
+
+![Research Computing](research_computing.png)
+
+*Graphical Illustration of Research Computing Webpage*
+
+## Features
+
+- **React Front-End Client:** The front-end is built using React, providing a responsive and interactive user interface.
+
+- **Node.js and Golang APIs:** We have implemented two APIs, one using Node.js and the other using Golang, to handle various backend functionalities.
+
+- **Database:** A database system is integrated to store and manage data efficiently.
+
+## Getting Started
+
+To run this application locally, follow these steps:
+
+1. Clone the repository to your local machine.
+
+2. Install the necessary dependencies for the front-end and back-end components.
+
+3. Start the React front-end client.
+
+4. Launch the Node.js and Golang APIs.
+
+5. Connect to the database.
+
+## Containerization vs. Bare-Metal
+
+One of the key aspects of this project is to explore the differences and trade-offs between deploying a microservices application using containerization (e.g., Docker) compared to traditional bare-metal deployment. We have analyzed and compared the following factors:
+
+- **Scalability:** Containerization offers dynamic scalability, whereas bare-metal requires manual provisioning and scaling.
+
+- **Isolation:** Containers provide better isolation between services, minimizing potential conflicts.
+
+- **Resource Utilization:** Containers are lightweight and more efficient in resource utilization compared to dedicated bare-metal servers.
+
+- **Deployment Speed:** Containers enable rapid deployment and updates, reducing downtime.
+
+- **Management:** Container orchestration tools (e.g., Kubernetes) simplify management compared to traditional server administration.
+
+By studying these aspects, we aim to highlight the benefits and considerations when choosing containerization for microservices deployment.
+
+## Contributors
+
+- [Your Name](https://github.com/yourusername)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
