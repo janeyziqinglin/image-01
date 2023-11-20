@@ -33,12 +33,37 @@ function CurrentTime(props) {
 export function App() {
   return (
     <QueryClientProvider client={queryClient}>
-      <h1>Hey RC Team! 👋</h1>
+      <header>
+        <h1>Research Computing at Northeastern University</h1>
+        <p>
+          Connecting the research community at Northeastern University with
+          high-performance computing solutions.
+        </p>
+        <p>Connecting You to the Power of Discovery</p>
+        <p>
+          As a researcher at Northeastern University, you can take advantage of
+          the comprehensive research computing offerings and services available
+          to you—including access to centralized high-performance computing
+          (HPC) clusters, storage, visualization, software, high-level technical
+          and scientific consultations, documentation, and training.
+        </p>
+      </header>
       <CurrentTime api="/api/golang/" />
       <CurrentTime api="/api/node/" />
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>
   );
 }
+
+// export function App() {
+//   return (
+//     <QueryClientProvider client={queryClient}>
+//       <h1>Hey RC Team! 👋</h1>
+//       <CurrentTime api="/api/golang/" />
+//       <CurrentTime api="/api/node/" />
+//       <ReactQueryDevtools initialIsOpen={false} />
+//     </QueryClientProvider>
+//   );
+// }
 
 export default App;
