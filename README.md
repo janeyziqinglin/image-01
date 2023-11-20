@@ -8,13 +8,7 @@ This project showcases a 3-tier web application built with a React front-end cli
 
 *Graphical Illustration of Research Computing Webpage*
 
-## Features
 
-- **React Front-End Client:** The front-end is built using React, providing a responsive and interactive user interface.
-
-- **Node.js and Golang APIs:** We have implemented two APIs, one using Node.js and the other using Golang, to handle various backend functionalities.
-
-- **Database:** A database system is integrated to store and manage data efficiently.
 
 ## Getting Started
 
@@ -63,7 +57,15 @@ One of the key aspects of this project is to explore the differences and trade-o
 - Portability: Containerized apps can be easily deployed to different environments.
 - Isolation: Containers isolate components, reducing conflicts and resource allocation issues.
 - Debugging and troubleshooting are streamlined with containerization tools and logs.
-- 
+
+## Features
+
+- **React Front-End Client:** The front-end is built using React, providing a responsive and interactive user interface.
+
+- **Node.js and Golang APIs:** We have implemented two APIs, one using Node.js and the other using Golang, to handle various backend functionalities.
+
+- **Database:** A database system is integrated to store and manage data efficiently.
+  
 
 ## License
 
