@@ -4,7 +4,7 @@
 
 This project showcases a 3-tier web application built with a React front-end client, two APIs (Node.js and Golang), and a database. The aim of this project is to create a simple yet realistic microservices system that can be containerized, providing insights into the advantages and trade-offs of using containerization over traditional bare-metal deployment.
 
-![Research Computing](research_computing.png)
+![Screenshot 2023-11-20 at 12 14 39 PM](https://github.com/janeyziqinglin/image-01/assets/105125897/a705cc15-96de-4bca-bd34-c54ad228fc3e)
 
 *Graphical Illustration of Research Computing Webpage*
 
@@ -42,14 +42,29 @@ One of the key aspects of this project is to explore the differences and trade-o
 
 - **Deployment Speed:** Containers enable rapid deployment and updates, reducing downtime.
 
-- **Management:** Container orchestration tools (e.g., Kubernetes) simplify management compared to traditional server administration.
+- **Management:** Container orchestration tools (e.g., docker) simplify management compared to traditional server administration.
 
-By studying these aspects, we aim to highlight the benefits and considerations when choosing containerization for microservices deployment.
+### Bare-Metal
 
-## Contributors
+- Requires manual setup of individual components (PostgreSQL, Node.js, Golang).
+- Components need independent configuration, maintenance, and monitoring.
+- Environments can vary, leading to compatibility and configuration challenges.
+- Scaling and replicating services can be complex and time-consuming.
+- Deployment across different environments requires additional setup.
+- Limited isolation between components can lead to conflicts and resource issues.
+- Debugging can be challenging due to the complexity of the setup.
 
-- [Your Name](https://github.com/yourusername)
+### Containerized (Docker Compose)
+
+- Provides a consistent and reproducible environment for the entire stack.
+- All components, dependencies, and configurations are defined in Docker Compose files, simplifying setup.
+- Ensures consistency across environments (development, testing, production).
+- Scalability is simplified with Docker Compose, allowing easy scaling of services.
+- Portability: Containerized apps can be easily deployed to different environments.
+- Isolation: Containers isolate components, reducing conflicts and resource allocation issues.
+- Debugging and troubleshooting are streamlined with containerization tools and logs.
+- 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License
