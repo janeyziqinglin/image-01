@@ -14,7 +14,7 @@ services:
       - type: bind
         source: ../08-running-containers/client-react/vite.config.js
         target: /usr/src/app/vite.config.js
-        # - ../08-running-containers/client-react/vite.config.js:/usr/src/app/vite.config.js
+        #  - ../08-running-containers/client-react/vite.config.js:/usr/src/app/vite.config.js
     networks:
       - frontend
     ports:
