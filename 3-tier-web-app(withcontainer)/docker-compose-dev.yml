@@ -3,7 +3,7 @@ services:
     image: client-react-vite
     build:
       context: ../3-tier-web-app(withoutcontainer)/client-react/
-      dockerfile: ../../06-building-container-images/client-react/Dockerfile.3
+      dockerfile: ../../supplement/06-building-container-images/client-react/Dockerfile.3
     init: true
     volumes:
       - type: bind
@@ -26,7 +26,7 @@ services:
     image: client-react-nginx
     build:
       context: ../3-tier-web-app(withoutcontainer)/client-react/
-      dockerfile: ../../06-building-container-images/client-react/Dockerfile.5
+      dockerfile: ../../supplement/06-building-container-images/client-react/Dockerfile.5
     init: true
     networks:
       - frontend
@@ -40,7 +40,7 @@ services:
     image: api-node
     build:
       context: ../3-tier-web-app(withoutcontainer)/api-node/
-      dockerfile: ../../06-building-container-images/api-node/Dockerfile.7
+      dockerfile: ../../supplement/06-building-container-images/api-node/Dockerfile.7
     init: true
     # volumes:
     #   - type: bind
@@ -65,7 +65,7 @@ services:
     image: api-golang
     build:
       context: ../3-tier-web-app(withoutcontainer)/api-golang/
-      dockerfile: ../../06-building-container-images/api-golang/Dockerfile.6
+      dockerfile: ../../supplement/06-building-container-images/api-golang/Dockerfile.6
     init: true
     depends_on:
       - db
