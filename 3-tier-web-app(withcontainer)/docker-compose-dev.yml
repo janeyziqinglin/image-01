@@ -12,9 +12,9 @@ services:
       - type: volume
         target: /usr/src/app/node_modules
       - type: bind
-        source: ../08-running-containers/client-react/vite.config.js
+        source: ../supplement/08-running-containers/client-react/vite.config.js
         target: /usr/src/app/vite.config.js
-        #  - ../08-running-containers/client-react/vite.config.js:/usr/src/app/vite.config.js
+        #  - ../supplement/08-running-containers/client-react/vite.config.js:/usr/src/app/vite.config.js
     networks:
       - frontend
     ports:
