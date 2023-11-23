@@ -9,7 +9,6 @@ This project showcases a 3-tier web application built with a React front-end cli
 *Graphical Illustration of Research Computing Webpage*
 
 
-
 ## Getting Started
 
 To run this application locally, follow these steps:
